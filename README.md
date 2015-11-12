@@ -1,39 +1,85 @@
-CakePHP
-=======
+# CakePHP Framework
 
-[![CakePHP](http://cakephp.org/img/cake-logo.png)](http://www.cakephp.org)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.txt)
+[![Build Status](https://img.shields.io/travis/cakephp/cakephp/master.svg?style=flat-square)](https://travis-ci.org/cakephp/cakephp)
+[![Coverage Status](https://img.shields.io/coveralls/cakephp/cakephp/master.svg?style=flat-square)](https://coveralls.io/r/cakephp/cakephp?branch=master)
+[![Code Consistency](https://squizlabs.github.io/PHP_CodeSniffer/analysis/cakephp/cakephp/grade.svg)](http://squizlabs.github.io/PHP_CodeSniffer/analysis/cakephp/cakephp/)
+[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/cakephp.svg?style=flat-square)](https://packagist.org/packages/cakephp/cakephp)
+[![Latest Stable Version](https://img.shields.io/packagist/v/cakephp/cakephp.svg?style=flat-square&label=stable)](https://packagist.org/packages/cakephp/cakephp)
+[![Latest Unstable Version](https://img.shields.io/packagist/vpre/cakephp/cakephp.svg?style=flat-square&label=unstable)](https://packagist.org/packages/cakephp/cakephp)
 
-CakePHP is a rapid development framework for PHP which uses commonly known design patterns like Active Record, Association Data Mapping, Front Controller and MVC.
-Our primary goal is to provide a structured framework that enables PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
+[CakePHP](http://www.cakephp.org) is a rapid development framework for PHP which
+uses commonly known design patterns like Associative Data
+Mapping, Front Controller, and MVC.  Our primary goal is to provide a structured
+framework that enables PHP users at all levels to rapidly develop robust web
+applications, without any loss to flexibility.
 
-Some Handy Links
-----------------
+## Installing CakePHP via Composer
 
-[CakePHP](http://www.cakephp.org) - The rapid development PHP framework
+You can install CakePHP into your project using
+[Composer](http://getcomposer.org).  If you're starting a new project, we
+recommend using the [app skeleton](https://github.com/cakephp/app) as
+a starting point. For existing applications you can run the following:
 
-[Cookbook](http://book.cakephp.org) - THE Cake user documentation; start learning here!
+``` bash
+$ composer require cakephp/cakephp:"~3.1"
+```
 
-[Plugins](http://plugins.cakephp.org/) - A repository of extensions to the framework
+## Running Tests
 
-[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles
+Assuming you have PHPUnit installed system wide using one of the methods stated
+[here](http://phpunit.de/manual/current/en/installation.html), you can run the
+tests for CakePHP by doing the following:
 
-[API](http://api.cakephp.org) - A reference to Cake's classes
+1. Copy `phpunit.xml.dist` to `phpunit.xml`.
+2. Add the relevant database credentials to your `phpunit.xml` if you want to run tests against
+   a non-SQLite datasource.
+3. Run `phpunit`.
 
-[CakePHP TV](http://tv.cakephp.org) - Screen casts from events and video tutorials
+## Some Handy Links
 
-[The Cake Software Foundation](http://cakefoundation.org/) - promoting development related to CakePHP
+[CakePHP](http://www.cakephp.org) - The rapid development PHP framework.
 
-Get Support!
-------------
+[CookBook](http://book.cakephp.org) - THE CakePHP user documentation; start learning here!
 
-[Our Google Group](http://groups.google.com/group/cake-php) - community mailing list and forum
+[API](http://api.cakephp.org) - A reference to CakePHP's classes.
+
+[Plugins](http://plugins.cakephp.org) - A repository of extensions to the framework.
+
+[The Bakery](http://bakery.cakephp.org) - Tips, tutorials and articles.
+
+[Community Center](http://community.cakephp.org) - A source for everything community related.
+
+[Training](http://training.cakephp.org) - Join a live session and get skilled with the framework.
+
+[CakeFest](http://cakefest.org) - Don't miss our annual CakePHP conference.
+
+[Cake Software Foundation](http://cakefoundation.org) - Promoting development related to CakePHP.
+
+## Get Support!
 
 [#cakephp](http://webchat.freenode.net/?channels=#cakephp) on irc.freenode.net - Come chat with us, we have cake.
 
-[Q & A](http://ask.cakephp.org/) - Ask questions here, all questions welcome
+[Google Group](https://groups.google.com/group/cake-php) - Community mailing list and forum.
 
-[Lighthouse](http://cakephp.lighthouseapp.com/) - Got issues? Please tell us!
+[GitHub Issues](https://github.com/cakephp/cakephp/issues) - Got issues? Please tell us!
 
-[![Bake Status](https://secure.travis-ci.org/cakephp/cakephp.png?branch=master)](http://travis-ci.org/cakephp/cakephp)
+[Roadmaps](https://github.com/cakephp/cakephp/wiki#roadmaps) - Want to contribute? Get involved!
 
-![Cake Power](https://raw.github.com/cakephp/cakephp/master/lib/Cake/Console/Templates/skel/webroot/img/cake.power.gif)
+## Contributing
+
+[CONTRIBUTING.md](CONTRIBUTING.md) - Quick pointers for contributing to the CakePHP project.
+
+[CookBook "Contributing" Section](http://book.cakephp.org/3.0/en/contributing.html) - Details about contributing to the project.
+
+# Security
+
+If you’ve found a security issue in CakePHP, please use the following procedure instead of the normal bug reporting system. Instead of using the bug tracker, mailing list or IRC please send an email to security [at] cakephp.org. Emails sent to this address go to the CakePHP core team on a private mailing list.
+
+For each report, we try to first confirm the vulnerability. Once confirmed, the CakePHP team will take the following actions:
+
+- Acknowledge to the reporter that we’ve received the issue, and are working on a fix. We ask that the reporter keep the issue confidential until we announce it.
+- Get a fix/patch prepared.
+- Prepare a post describing the vulnerability, and the possible exploits.
+- Release new versions of all affected versions.
+- Prominently feature the problem in the release announcement.
