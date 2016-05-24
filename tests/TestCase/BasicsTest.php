@@ -16,12 +16,8 @@
  */
 namespace Cake\Test\TestCase;
 
-use Cake\Cache\Cache;
-use Cake\Core\App;
 use Cake\Core\Configure;
 use Cake\Event\EventManager;
-use Cake\Filesystem\Folder;
-use Cake\Log\Log;
 use Cake\Network\Response;
 use Cake\TestSuite\TestCase;
 
@@ -301,7 +297,7 @@ EXPECTED;
 ###########################
 
 EXPECTED;
-        if (PHP_SAPI === 'cli') {
+        if ((PHP_SAPI === 'cli' || PHP_SAPI === 'phpdbg')) {
             $expected = sprintf($expectedText, str_replace(CAKE_CORE_INCLUDE_PATH, '', __FILE__), __LINE__ - 18);
         } else {
             $expected = sprintf($expectedHtml, str_replace(CAKE_CORE_INCLUDE_PATH, '', __FILE__), __LINE__ - 19);
@@ -326,7 +322,7 @@ EXPECTED;
 ###########################
 
 EXPECTED;
-        if (PHP_SAPI === 'cli') {
+        if ((PHP_SAPI === 'cli' || PHP_SAPI === 'phpdbg')) {
             $expected = sprintf($expectedText, str_replace(CAKE_CORE_INCLUDE_PATH, '', __FILE__), __LINE__ - 18);
         } else {
             $expected = sprintf($expectedHtml, str_replace(CAKE_CORE_INCLUDE_PATH, '', __FILE__), __LINE__ - 19);
